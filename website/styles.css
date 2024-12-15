@@ -1,10 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
 .responsive-image {
     width: 100%;
     height: auto;
 }
 
+body {
+    background: url("assets/forest-placeholder.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 .image-container {
     position: relative;
+    min-height: 20em;
 }
 
 nav {
@@ -39,36 +52,45 @@ nav {
     border-radius: 5px;
 }
 
-.footer li {
-    display: inline;
-}
-
 footer {
     background-color: lightgrey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;    
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
+    list-style-type: none;
+    background-color: lightgrey;
+
 }
 
 ul li {
-    /* flex: auto; */
-    margin-right: 10px;
+    display: inline-block;
+    /* margin-right: 10px; */
     list-style-type: none;
 }
 
 ul.header li a {
-    display: flex;
-    flex: auto;
-    /* text-align: center; */
     text-decoration: none;
-    /* justify-content: center; */
-    padding: 0px;
+    color: black;
+    display: inline-block;
+    padding: 12px 16px;
 }
 
-ul.footer {
-    /*remove bullet points*/
-    list-style-type: none;
+ul.header li a:hover {
+    background-color: grey;
 }
 
+ul.footer li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+/*works above*/
+
+ul.footer, footer span {
+    float: left;
+}
