@@ -1,5 +1,11 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    line-height: 1.2em;
 }
 
 .responsive-image {
@@ -7,7 +13,7 @@
     height: auto;
 }
 
-body {
+#home-body {
     background: url("assets/forest-placeholder.jpg");
     background-position: 50% 50%;
     background-size: cover;
@@ -57,7 +63,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;    
+    right: 0;
 }
 
 ul {
@@ -83,14 +89,53 @@ ul.header li a:hover {
     background-color: grey;
 }
 
+/*gives padding around icons at bottom*/
 ul.footer li a {
     text-decoration: none;
     color: black;
     display: inline-block;
+    padding: 12px 3px;
+
 }
 
 /*works above*/
 
 ul.footer, footer span {
     float: left;
+}
+
+/*aligning the copyright message and icons in the navbar*/
+footer p span {
+    margin-top: 12px;
+    margin-left: 3em;
+    margin-right: 1em;
+}
+
+/*styling for the sponsorship packet button*/
+#sponsor-button {
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 1em;
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid;
+    margin-top: 0.3em;
+}
+
+/*leaves space around the border for the main content*/
+main {
+    margin: 3em;
+}
+ 
+.contact-page p {
+    margin-top: 5px;
+}
+
+#contact-title {
+    margin-top: 0px;
+}
+
+.social-link {
+    list-style-type: none;
 }
