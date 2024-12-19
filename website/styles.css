@@ -139,3 +139,72 @@ main {
 .social-link {
     list-style-type: none;
 }
+
+/*rounded box for headshots and decsriptions*/
+.profile-outline {
+    height: 232px;
+    width: 300px;
+    border-radius: 25px;
+    border-style: solid;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-title {
+    text-align: center;
+}
+
+.profile-title {
+    margin-top: 0.5em;
+}
+
+/*the display of the headshot boxes*/
+#profile-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dimensions of the member photos */
+.headshot {
+    width: 80%;
+    height: auto;
+    margin-top: 0.5em;
+}
+/* 
+#home-button {
+    background-color: grey;
+} */
+
+#about-title {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.about-page p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+#smoke-photo {
+    float: left;
+    margin: 5px;
+    width: 50%;
+}
+
+#hill-photo {
+    float: right;
+    margin: 5px;
+    width: 50%;
+}
+
+#firefighter-photo {
+    float: left;
+    margin: 5px;
+    width: 50%;
+}
