@@ -208,3 +208,87 @@ main {
     margin: 5px;
     width: 50%;
 }
+
+#sponsor-title {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.faq-bar {
+    border-radius: 10px;
+    vertical-align: middle;
+    background-color: green;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    height: 2em;
+    line-height: 2em;
+    /*change the font... overall design can be improved */
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+}
+
+table {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.donate-button {
+    /*make the bordering positions standardized!!!*/
+    border-radius: 10px;
+    vertical-align: middle;
+    width: 33%;
+    background-color: green;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid green;
+    /*change the font... overall design can be improved */
+}
+
+/*profile outline is container, then div class overlay after image, then div class text for hidden text*/
+/*POSITIONING OF OVERLAY NEEDS TO BE FIXED*/
+
+.overlay {
+    position: relative;
+    top: -160px;
+    bottom: -200px;
+    left: 29px;
+    right: -50px;
+    height: 70%;
+    width: 80%;
+    transition: .2s ease;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay:hover {
+    opacity: 0.75;
+}
+
+.text {
+    color: white;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    text-align: center;
+    vertical-align: middle;
+}
